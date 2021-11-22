@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Meblo-Tech</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="menu">
+      <div class="navbar-const">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="aboutUs.html"><i class="fa fa-fw fa-user"></i> O&nbsp;Nas</a></li>
+          <li><a href="services.html"><i class="fa fa-fw fa-bath"></i> Usługi</a></li>
+          <li><a href="gallery.html"><i class="fa fa-fw fa-camera"></i> Realizacje</a></li>
+          <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidenav">
+    <a href="index.html">Strona Główna</a>
+    <button class="dropdown-btn">Meble
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="gallery.html#room">Pokoj</a>
+      <a href="gallery.html#kitchen">Kuchnia</a>
+      <a href="gallery.html#bath">Łazienka</a>
+      <a href="gallery.html#other">Inne</a>
+    </div>
+    <a href="producers.html">Partnerzy</a>
+    <a href="map.html">Jak dojechać?</a>
+    <a href="download.html">Do pobrania</a>
+  </div>
+    <header id="header">
+        <div class="intro">
+          <div class="banner">
+          <a href="index.html"><img src="../GRAFIKA/sofa4.png"> </img></a>
+        </div>
+            <div class="overlay">
+              <canvas id="canvas" width="400" height="400"
+              style="background: rgba(255,255,255,0);position:absolute; width:7%; right:12%; top:8%;">
+              </canvas>
+                  <div class="intro-text">
+                      <h1><strong>Meblo-Tech</strong> <span>/</span> Usługi Meblarskie</h1>
+                      <a href="#about" class="seemore">Zobacz więcej</a>
+                  </div>
+
+            </div>
+        </div>
+    </header>
+    <div id="about">
+      <h3>Usługi </h3>
+      <div class="borderimg">
+        <img src="../GRAFIKA/services.jpg" style="width:480px;height:368px;"></img>
+      </div>
+      <div class="services">
+        <br>Oferujemy szeroki zakres usług, między innymi:
+        <ul>
+          <li>Meble na wymiar:</li>
+              <ul>
+                <li>Kuchenne</li>
+                <li>Biurowe</li>
+                <li>Do pokoju, sypialni </li>
+                <li>Szafy i zabudowy</li>
+                <li>Wolnostojące takie jak komody, witryny, ławy, stoły i inne.</li>
+              </ul>
+          <li>Pomiary</li>
+          <li>Wycena projektu</li>
+          <li>Dowóz mebli</li>
+        </ul>
+        Pomiary oraz wycena <i>gratis</i>.<br>
+        Zapraszamy do zakładki "Realizacje", w której umieszczone są zdjęcia prac.
+      </div>
+    </div>
+    <div class="footer">
+      Copyright © 2021 Wszystkie prawa zastrzeżone
+    </div>
+    <script src="clock.js"></script>
+    <script src="hamburgerclick.js"></script>
+</body>
+</html>

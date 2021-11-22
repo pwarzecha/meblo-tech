@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Meblo-Tech</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav id="menu">
+      <div class="navbar-const">
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="aboutUs.html"><i class="fa fa-fw fa-user"></i> O&nbsp;Nas</a></li>
+          <li><a href="services.html"><i class="fa fa-fw fa-bath"></i> Usługi</a></li>
+          <li><a href="gallery.html"><i class="fa fa-fw fa-camera"></i> Realizacje</a></li>
+          <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="sidenav">
+    <a href="index.html">Strona Główna</a>
+    <button class="dropdown-btn">Meble
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="gallery.html#room">Pokoj</a>
+      <a href="gallery.html#kitchen">Kuchnia</a>
+      <a href="gallery.html#bath">Łazienka</a>
+      <a href="gallery.html#other">Inne</a>
+    </div>
+    <a href="producers.html">Partnerzy</a>
+    <a href="map.html">Jak dojechać?</a>
+    <a href="download.html">Do pobrania</a>
+  </div>
+    <header id="header">
+        <div class="intro">
+          <div class="banner">
+          <a href="index.html"><img src="../GRAFIKA/sofa4.png"> </img></a>
+        </div>
+            <div class="overlay">
+              <canvas id="canvas" width="400" height="400"
+              style="background: rgba(255,255,255,0);position:absolute; width:7%; right:12%; top:8%;">
+              </canvas>
+                  <div class="intro-text">
+                      <h1><strong>Meblo-Tech</strong> <span>/</span> Usługi Meblarskie</h1>
+                      <a href="#about" class="seemore">Zobacz więcej</a>
+                  </div>
+
+            </div>
+        </div>
+    </header>
+    <div id="about">
+      <h3>Nasze Realizacje</h3>
+      <a href="#kitchen" class="seemoreG">Kuchnia</a>
+      <a href="#room" class="seemore">Pokój</a>
+      <a href="#bath" class="seemore">Łazienka</a>
+      <a href="#other" class="seemore">Inne</a>
+      <div id="kitchen"><h1>Kuchnia</h1></div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/kitchen1.jpg" onclick="openModal();currentSlide(1)">
+        </div>
+      </div>
+
+
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/kitchen2.jpg" onclick="openModal();currentSlide(2)">
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/kitchen3.jpg"  onclick="openModal();currentSlide(3)">
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/kitchen4.jpg" onclick="openModal();currentSlide(4)">
+        </div>
+      </div>
+
+      <div id="room"><h1>Pokój/Biuro</h1></div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room1v.jpg"  onclick="openModal();currentSlide(5)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+
+              <img src="../GRAFIKA/room3v.jpg" onclick="openModal();currentSlide(6)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room2.jpg"  onclick="openModal();currentSlide(7)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room44.jpg"  onclick="openModal();currentSlide(8)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room4.jpg"  onclick="openModal();currentSlide(9)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room5.jpg"  onclick="openModal();currentSlide(10)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room7.jpg"  onclick="openModal();currentSlide(11)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room9.jpg"  onclick="openModal();currentSlide(12)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/room10.jpg"  onclick="openModal();currentSlide(13)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/rom11.jpg"  onclick="openModal();currentSlide(14)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/rom12.jpg"  onclick="openModal();currentSlide(15)">
+        </div>
+      </div>
+
+      <div id="other"><h1>Inne</h1></div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/other1.jpg"  onclick="openModal();currentSlide(16)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/other2.jpg"  onclick="openModal();currentSlide(17)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/other3.jpg"  onclick="openModal();currentSlide(18)">
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+              <img src="../GRAFIKA/other4.jpg"  onclick="openModal();currentSlide(19)">
+        </div>
+      </div>
+      <div class="footer2">
+        Copyright © 2021 Wszystkie prawa zastrzeżone
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / x</div>
+            <img src="../GRAFIKA/kitchen1.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / x</div>
+            <img src="../GRAFIKA/kitchen2.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / x</div>
+            <img src="../GRAFIKA/kitchen3.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / x</div>
+            <img src="../GRAFIKA/kitchen4.jpg" style="padding: 20%;width:50%">
+          </div>
+
+
+          <div class="mySlides">
+            <div class="numbertext">5 / x</div>
+            <center><img src="../GRAFIKA/room1.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / x</div>
+            <img src="../GRAFIKA/room3.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / x</div>
+            <img src="../GRAFIKA/room2.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / x</div>
+            <img src="../GRAFIKA/room44.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / x</div>
+            <img src="../GRAFIKA/room4.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">10 / x</div>
+            <img src="../GRAFIKA/room5.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">11 / x</div>
+            <img src="../GRAFIKA/room7.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">12 / x</div>
+            <img src="../GRAFIKA/room9.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">13 / x</div>
+            <img src="../GRAFIKA/room10.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">18 / x</div>
+            <img src="../GRAFIKA/rom11.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">18 / x</div>
+            <img src="../GRAFIKA/rom12.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">14 / x</div>
+            <img src="../GRAFIKA/other1.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">15 / x</div>
+            <img src="../GRAFIKA/other2.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">16 / x</div>
+            <img src="../GRAFIKA/other3.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">17 / x</div>
+            <img src="../GRAFIKA/other4.jpg" style="padding-left:20%;width:50%">
+          </div>
+
+
+
+
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="row">
+          <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/kitchen1.jpg" style="width:100%; height:267px;" onclick="currentSlide(1)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/kitchen2.jpg" style="width:100%; height:267px;" onclick="currentSlide(2)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/kitchen3.jpg" style="width:100%; height:267px;" onclick="currentSlide(3)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/kitchen4.jpg" style="width:100%; height:267px;" onclick="currentSlide(4)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room1.jpg" style="width:100%; height:267px;" onclick="currentSlide(5)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room3.jpg" style="width:100%; height:267px;" onclick="currentSlide(6)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room2.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room44.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room4.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room5.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room7.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room9.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/room10.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/rom11.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/rom12.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/other1.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/other2.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/other3.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="../GRAFIKA/other4.jpg" style="width:100%; height:267px;" onclick="currentSlide(7)">
+        </div>
+
+      </div>
+
+      <div class="clearfix"></div>
+
+
+
+    </div>
+  </div>
+
+<script src="clock.js"></script>
+<script src="hamburgerclick.js"></script>
+<script src="gallery.js"></script>
+</body>
+</html>

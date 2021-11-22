@@ -1,0 +1,553 @@
+html {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  scroll-behavior:smooth;
+
+}
+body{
+	margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#menu {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height:67px;
+  background: rgba(19,19,70,1);;
+	top: -0.1vw;
+}
+#menu a:hover {
+  color: #cc0066;
+}
+
+a {
+	color: #ccc;
+	border: 0;
+	padding-left: 20px;
+	margin: 0;
+  font-size:2.5vh;
+	margin-top: 0.1vh;
+	transition: all 0.7s;
+  text-decoration: none;
+}
+
+.meblomax {
+color:blue;
+text-align: 0.6vh;
+padding:0;
+margin:0;
+text-decoration: underline;
+}
+
+
+.seemore {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #191970;
+  opacity:0.6;
+	border: 0;
+	margin-left:0px;
+	font-size: 17px;
+	border-radius: 12px 0 12px 0;
+	margin-top: 20px;
+	transition: all 0.7s;
+  padding: 1vh;
+}
+.seemore:hover{
+	background-color:#cc0033;
+  opacity:1;
+}
+.seemore a{
+    margin-left:2%;
+}
+.seemore a:hover{
+  color: #fff;
+  border-radius: 12px 0 12px 0;
+  background-color: #191970;
+}
+
+.seemoreG {
+  padding: 1vh;
+  margin-left: 41%;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #191970;
+  opacity:0.6;
+	border: 0;
+	font-size: 17px;
+	border-radius: 12px 0 12px 0;
+	margin-top: 20px;
+	transition: all 0.7s;
+}
+.seemoreG:hover{
+	background-color: #191970;
+  opacity:1;
+}
+.seemoreG a:hover{
+  color: #fff;
+  border-radius: 12px 0 12px 0;
+  background-color: #191970;
+}
+
+.intro {
+	display: table;
+	width: 100%;
+  height: 100vh;
+	padding: 0;
+  /*background: url(../GRAFIKA/sofa.png) no-repeat;*/
+  margin:0 auto;
+}
+.intro img {
+  position:absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner a {
+	padding: 0;
+	margin: 0;
+}
+
+.overlay {
+	background: rgba(0,0,0,0.10);
+}
+.intro h1 {
+	color: #fff;
+	font-size: 68px;
+	font-weight: 400;
+	margin-top: 0;
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+}
+.intro span {
+	color: #cc0033;
+	font-weight: 600;
+}
+
+header .intro-text {
+	padding: 0;
+  margin-top:15%;
+  margin-left:21%;
+	text-align: center;
+  position:absolute;
+
+}
+
+.navbar-const {
+  height: 38px;
+  float: right;
+  margin-right:1%;
+  padding-left: 15px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+.navbar-const {
+  position: relative;
+  padding-top:-3vw;
+
+}
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 60%;
+  transform: translate(-5%, -50%);
+  z-index: 2;
+}
+
+.nav-links {
+  margin-right:15%;
+  margin-top:1vh;
+}
+.nav-links li {
+  opacity: 0;
+
+}
+.nav-links li a {
+
+
+}
+.nav-links li:nth-child(4) {
+  transition: all 0.1s ease 0.2s;
+}
+.nav-links li:nth-child(3) {
+  transition: all 0.1s ease 0.4s;
+}
+.nav-links li:nth-child(2) {
+  transition: all 0.1s ease 0.6s;
+}
+.nav-links li:nth-child(1) {
+  transition: all 0.1s ease 0.8s;
+}
+li.fade {
+  opacity: 1;
+
+}
+}
+
+.sidenav {
+  height: 65vh;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 68px;
+  left: 0;
+  opacity:1;
+  background: none;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 0.5vh 4vh 1vh 2vh;
+  text-decoration: none;
+  font-size:1vw;
+  color: #ccc;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #fff;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+  background: rgba(204,0,51,0.8);
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding-left: 1vh;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-left: 0.3vh;
+  right:1vw;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#about {
+	background: #fff;
+}
+#about h3 {
+  text-align:center;
+  margin-left:-5%;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+#about .borderimg img {
+margin:0 auto;
+	display: block;
+  border-radius: 100px 0 100px 0;
+  box-shadow: -10px 0 #191970;
+}
+
+#about .normalimg1 img {
+margin:0 auto;
+	display: block;
+  margin-bottom:20px;
+
+}
+#about .normalimg2 img {
+margin:0 auto;
+	display: block;
+  margin-bottom:20px;
+
+}
+#about p {
+	line-height: 24px;
+	margin: 50px 150px 50px 150px;
+  text-align: center;
+  font-size: 22px;
+}
+p {
+  line-height: 24px;
+	margin: 50px 150px 50px 150px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.services{
+  font-size: 22px;
+  margin-left: 15%;
+  margin-bottom: 10px;
+}
+.footer {
+  height: 30px;
+  background: rgba(19,19,70,0.6);
+  margin-top:30px;
+  padding-top: 13px;
+  text-align: center;
+  color:#fff;
+  font-size: 12px;
+}
+
+.footerIndex {
+  height: 30px;
+  background: rgba(19,19,70,0.6);
+  margin-top:1px;
+  padding-top: 13px;
+  text-align: center;
+  color:#fff;
+  font-size: 12px;
+}
+.footer2 {
+  background: rgba(19,19,70,0.6);
+  text-align: center;
+  color:#fff;
+  font-size: 12px;
+  margin-top:20px;
+  float:left;
+  width:100%;
+  margin-top:30px;
+  height: 30px;
+  padding-top: 13px;
+}
+
+#kitchen, #room, #bath, #other {
+  margin-top:20px;
+  margin-left:6%;
+  float:left;
+  width:91%;
+}
+.gallery {
+  border: 1px solid rgba(255,255,255,0.01);
+  opacity: 0.94;
+}
+
+.gallery:hover {
+  opacity: 1;
+}
+
+.gallery img {
+  width: auto;
+  height: 64vh;
+}
+
+/*
+.desc {
+  padding: 10px;
+  text-align: center;
+}*/
+
+.responsive {
+  margin-top:10px;
+  padding-top:10px;
+  margin-left: 6%;
+  float: left;
+  width: 26%;
+  height:40%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  width: 183px;
+  margin-bottom: 15px;
+
+}
+
+.row {
+  width: 1100px;
+  height: 300px;
+  overflow-x: scroll;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+ grid-gap: 0 50px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  margin-bottom:200px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.6);
+
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: fixed;
+  top: 60px;
+  right: 15px;
+  font-size: 55px;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right:5px;
+
+}
+
+.close:hover,
+.close:focus {
+font-size:60px;
+transition: 0.1s;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 25%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #fff;
+  font-size: 22px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.95;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+  width:300px;
+  height:auto;
+}
+
+.logos{
+  margin-left:13vw;
+}
+
+.pdf img {
+width:100px;
+height:auto;
+margin-left:30vh;
+}
+.pdf span {
+  color:black;
+  font-size: 2.5vh;
+  margin-left:28vh;
+}
+
+iframe {
+  width:80vw;
+  height:39vw;
+}

@@ -1,0 +1,17 @@
+Ogolem
+- dodac podstrony 
+- dodac cennik
+- poukladac cssa 
+- jakas tabelka
+- keywords opis
+
+
+
+1. O nas
+
+2. Usługi
+
+3. Galeria
+- wstawic reszte zdjec //po projekcie
+
+4. Kontakt

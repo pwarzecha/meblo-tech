@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Meblo-Tech</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav id="menu">
+        <div class="navbar-const">
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="aboutUs.html"><i class="fa fa-fw fa-user"></i> O&nbsp;Nas</a></li>
+            <li><a href="services.html"><i class="fa fa-fw fa-bath"></i> Usługi</a></li>
+            <li><a href="gallery.html"><i class="fa fa-fw fa-camera"></i> Realizacje</a></li>
+            <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Kontakt</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="sidenav">
+    <a href="index.html">Strona Główna</a>
+    <button class="dropdown-btn">Meble
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="gallery.html#room">Pokoj</a>
+      <a href="gallery.html#kitchen">Kuchnia</a>
+      <a href="gallery.html#bath">Łazienka</a>
+      <a href="gallery.html#other">Inne</a>
+    </div>
+    <a href="producers.html">Partnerzy</a>
+    <a href="map.html">Jak dojechać?</a>
+    <a href="download.html">Do pobrania</a>
+  </div>
+    <header id="header">
+        <div class="intro">
+          <div class="banner">
+          <a href="index.html"><img src="../GRAFIKA/sofa4.png"> </img></a>
+        </div>
+        <div class="overlay">
+          <canvas id="canvas" width="400" height="400"
+          style="background: rgba(255,255,255,0);position:absolute; width:7%; right:12%; top:8%;">
+          </canvas>
+                  <div class="intro-text">
+                      <h1><strong>Meblo-Tech</strong> <span>/</span> Usługi Meblarskie</h1>
+                      <a href="#about" class="seemore">Zobacz więcej</a>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <div id="about">
+      <h3>O nas</h3>
+      <div class="borderimg">
+        <img src="../GRAFIKA/about.jpg"></img>
+      </div>
+
+      <p>Firma <i>Meblo-Tech Grzegorz Kukla</i> istnieje na rynku branży meblarskiej od 2018 roku.<br>
+        Meblo-Tech poprzez doświadczenie swoich Pracowników w branży zapewni swoim Klientom właściwy poziom obsługi i kompetencji.<br>
+        Działalność prowadzona jest głównie w obszarze województwa małopolskiego.<br><br>
+        Siedziba firmy usytuowana jest pod adresem <i>33-240 Żabno ul. Głowackiego 51</i><br>
+        Firmę odnajdziesz korzystając ze współrzędnych geograficznych GPS: <b>50.1359139868096N</b>,<b> 20.8874491903694E</b>.
+
+      </p>
+      <div class=normalimg1>
+        <img src="../GRAFIKA/map.png"></img>
+      </div>
+
+    </div>
+    <div class="footer">
+      Copyright © 2021 Wszystkie prawa zastrzeżone
+    </div>
+    <script src="clock.js"></script>
+    <script src="leftmenu.js"></script>
+    <script src="hamburgerclick.js"></script>
+</body>
+</html>
